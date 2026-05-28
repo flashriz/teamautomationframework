@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import utilities.ConfigReader;
+
+import java.time.Duration;
 
 public class BaseTest {
 
@@ -13,13 +16,23 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
 
-        WebDriverManager.chromedriver().setup();
+        new ConfigReader();
 
-        driver = new ChromeDriver();
+        String browser = ConfigReader.getBrowser();
+
+        if(browser.equalsIgnoreCase("chrome")) {
+
+            WebDriverManager.chromedriver().setup();
+
+            driver = new ChromeDriver();
+        }
 
         driver.manage().window().maximize();
 
-        driver.get("https://example.com");
+        driver.manage().timeouts()
+                .implicitlyWait(Duration.ofSeconds(10));
+
+        driver.get(ConfigReader.getBaseUrl());
     }
 
     @AfterMethod
