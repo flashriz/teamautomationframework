@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51a635da-d580-497a-81bd-dc169e56fc75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/FlightListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PurchasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FlightSelectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ConfirmationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/PurchaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PurchasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PurchasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +39,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "subbranch__02"
+    "git-widget-placeholder": "subbranch__03"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.FlightSelectionTest">
+  <component name="RunManager" selected="TestNG.PurchaseTest">
     <configuration name="C:/practise-test-automation/TeamAutomationFramework/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TeamAutomationFramework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -89,8 +87,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PurchaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TeamAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.PurchaseTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PurchaseTest" />
         <item itemvalue="TestNG.FlightSelectionTest" />
         <item itemvalue="TestNG.C:/practise-test-automation/TeamAutomationFramework/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.LoginTest" />
